@@ -79,12 +79,7 @@ for Name, Error, Broadener, OmegaWidth in zip(AllName, AllError, AllBroadener, A
                 SigmaMatrix[TCounter, PCounter, :]  =  CalcCrossSection(Database, Name, Temp=TValue,P = 10**PValue, \
                           Broadening=Broadener, WN_Grid=WaveNumberGrid, Profile="Voigt",\
                           OmegaWing=0.0, OmegaWingHW=OmegaWidth, NCORES=-1)[::-1]
-
-                import matplotlib.pyplot as plt
-
-                plt.figure()
-                plt.plot(WaveNumberGrid, SigmaMatrix[TCounter, PCounter, :], "ko")
-                plt.show()
+            
 
         #Now save the matrix here
         np.save(SaveMatrixName, SigmaMatrix)
