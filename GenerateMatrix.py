@@ -1,5 +1,5 @@
 #import the libraries
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 #This code uses
 import numpy as np

@@ -1,6 +1,5 @@
 #import standard libraries
 import numpy as np
-import matplotlib.pyplot as plt
 import multiprocessing as mp
 from bisect import bisect
 
